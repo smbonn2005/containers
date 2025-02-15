@@ -18,12 +18,12 @@ jobs:
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5
         with:
           python-version: 3.x
           cache: pip
@@ -39,7 +39,7 @@ jobs:
         run: python ./scripts/render-readme.py
 
       - name: Commit Changes
-        uses: planetscale/ghcommit-action@v0.2.5
+        uses: planetscale/ghcommit-action@73c7d0fefec75e06673b9de4fb62f1d45561e098 # v0.2.5
         with:
           commit_message: "chore: regenerate README.md [skip ci]"
           repo: ${{ github.repository }}
