@@ -1,0 +1,11 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/master/docs/schema.yaml
+process:
+  python:
+    running: true
+port:
+  tcp:10300:
+    listening: true
+file:
+  /usr/local/bin/python:
+    exists: true
