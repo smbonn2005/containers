@@ -1,4 +1,4 @@
-FROM docker.io/library/python:3.13.2-alpine
+FROM docker.io/library/python:3.13.3-alpine
 
 
 LABEL dev.smbonn2005.image.target_platform=$TARGETPLATFORM
